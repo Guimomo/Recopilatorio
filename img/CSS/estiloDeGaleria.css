@@ -1,0 +1,205 @@
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+
+
+
+
+
+}
+
+body {
+
+  background-image: url("/img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+
+
+/* --------------------------------Base------------------------------------- */
+
+
+article {
+
+  max-width:1250px ;
+  height: 100%;
+  background-color: rgb(0, 129, 199);
+  background: linear-gradient(180deg, rgb(0, 129, 199) , rgb(255, 174, 24), rgb(225, 11, 0) );
+  box-shadow: 20px 0px black;
+
+  /* border-radius: 0px 100px 0px 0px; */
+
+  margin: 0 auto;
+  padding-bottom: 30px;
+
+
+}
+
+/* 
+article img.sheron {
+ 
+  box-sizing: content-box;
+  display: block;
+  margin-top: ;
+} */
+
+#titulo {
+
+  font-size: 100px;
+  box-sizing: content-box;
+  padding-top: 40px;
+  padding-left: 30px;
+  text-shadow: 5px 5px #fff;
+
+  transition: 1s;
+}
+
+
+#titulo img{
+
+  filter: drop-shadow(5px 5px black);
+  max-width: 100px;
+
+  transition: 1s;
+
+}
+
+
+
+
+#titulo:hover {
+  
+
+  transform: scale(1.2);
+
+  margin-left: 100px;
+
+}
+
+#titulo img:hover {
+
+  transform: rotate(50deg);
+
+}
+
+
+
+/* --------------------------------Cartas----------------------------------- */
+
+section {
+
+  margin: 0 auto;
+  /* background-color: aqua; */
+  max-width: 1250px;
+  max-height: 700px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+
+
+}
+
+#card {
+
+    display: inline-block;
+
+ 
+    box-sizing: content-box;
+    background-color: lightgrey;
+    width: 380px;
+    height: 650px;
+      
+
+    margin-left: 20px;
+
+
+
+
+
+
+    border-radius: 10px;
+    padding-top: 20px;
+    box-shadow: 6px 0px black;
+
+}
+
+#card img {
+
+    display: block;
+
+    box-sizing: content-box;
+
+
+
+    max-height: 280px;
+
+
+    margin:  0 auto;
+
+    transition: 1s;
+
+
+
+}
+
+#card img:hover {
+  
+  box-sizing: content-box;
+
+  filter: drop-shadow(10px 10px orange);
+
+  transform: scale(1.5);
+
+  
+
+
+}
+
+
+#card h1 {
+
+  box-sizing: content-box;
+
+  margin-top: 20px;
+
+  font-size: 50px;
+  text-shadow: 5px 5px white;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#card p#info{
+
+  box-sizing: content-box;
+
+  text-align: center;
+
+  padding-top: 15px;
+
+  width: 300px;
+
+  margin: 0 auto;
+
+}
+
+#card .especie {
+
+  box-sizing: border-box;
+  
+  background-color: #fff;
+  border-radius: 0px 0px 30px;
+  padding: 5px;
+  height: auto;
+  width: 200px;
+  margin-bottom: 7px;
+}
+
+/* by: Guillermo */

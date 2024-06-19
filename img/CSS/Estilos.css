@@ -1,0 +1,161 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.enlace {
+
+  display: block;
+  background: steelblue;
+  padding: 10px;
+  border-bottom: 2px solid #C2C2C2;
+  text-decoration: none;
+
+  color: #fff;
+
+
+}
+
+.enclace:link {
+
+  background: tomato;
+  color: black;
+}
+
+.enlace:visited {
+
+  background: crimson;
+  color: #fff;
+}
+
+.enlace:hover {
+
+  padding: 40px 20px;
+  font-size: 30px;
+
+  transition:1.5s;
+}
+
+
+form {
+
+  width: 80%;
+  margin: 30px auto;
+  background: #f2f2f2;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+}
+
+.form_title {
+
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+
+
+/* ---------------------------------------------------- */
+
+
+form {
+
+  display: block;
+}
+
+input[type=text], input[type=email] {
+
+  width: 100%;
+  padding: 12px 5px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+}
+
+input[type="checkbox"] {
+
+  display: inline-block;
+}
+
+input:focus {
+  background: lightblue;
+}
+
+input::placeholder {
+
+  color: #000;
+
+}
+
+input[type="checkbox"]:checked +label {
+  color: steelblue;
+}
+
+
+/* ---------------------------------------------------- */
+
+.event {
+
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 20px;
+  padding: 20px;
+  background:crimson;
+  text-decoration: none;
+  color: #fff;
+}
+
+.event:hover {
+
+  padding: 23px;
+  transition: 1.3s;
+}
+
+.box {
+
+
+  width: 100px;
+  height: 100px;
+  background: steelblue;
+  margin-top: 20px;
+  margin-left: 20px;
+  transition: 0.3s;
+
+
+}
+
+#objetivo:target {
+
+  border-radius: 50%;
+  /* margin:0 auto;  */
+  transform: translateX(1500px);
+
+}
+
+/* ---------------------------------------------------- */
+
+
+h3 {
+
+  font-size: 2rem;
+  font-weight: normal;
+  font-family: Arial;
+
+  margin-top: 30px;
+  text-align: center;
+}
+
+h3:not(.titulo) {
+
+  color: steelblue;
+
+
+
+}
+
+h3:not(.titulo):hover {
+
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+}
