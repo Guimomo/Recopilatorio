@@ -1,0 +1,277 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+.enlace {
+  
+    display: block;
+    background: steelblue;
+    padding: 10px;
+    border-bottom: 2px solid #C2C2C2;
+    text-decoration: none;
+  
+    color: #fff;
+  
+  
+}
+  
+  .enclace:link {
+  
+    background: tomato;
+    color: black;
+}
+  
+  .enlace:visited {
+  
+    background: crimson;
+    color: #fff;
+}
+  
+  .enlace:hover {
+  
+    padding: 40px 20px;
+    font-size: 30px;
+  
+    transition:1.5s;
+}
+  
+  
+  form {
+  
+    width: 80%;
+    margin: 30px auto;
+    background: #f2f2f2;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+}
+  
+.form_title {
+  
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+  
+  
+  /* ---------------------------------------------------- */
+  
+  
+form {
+  
+    display: block;
+}
+  
+  input[type=text], input[type=email] {
+  
+    width: 100%;
+    padding: 12px 5px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+}
+  
+input[type="checkbox"] {
+  
+    display: inline-block;
+}
+  
+input:focus {
+    background: lightblue;
+}
+  
+input::placeholder {
+  
+    color: #000;
+  
+}
+  
+  input[type="checkbox"]:checked +label {
+    color: steelblue;
+}
+  
+  
+  /* ---------------------------------------------------- */
+  
+.event {
+  
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 20px;
+    background:crimson;
+    text-decoration: none;
+    color: #fff;
+}
+  
+.event:hover {
+  
+    padding: 23px;
+    transition: 1.3s;
+}
+  
+.box {
+  
+  
+    width: 100px;
+    height: 100px;
+    background: steelblue;
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: 0.3s;
+  
+  
+}
+  
+#objetivo:target {
+  
+    border-radius: 50%;
+    /* margin:0 auto;  */
+    transform: translateX(1500px);
+  
+}
+  
+  /* ---------------------------------------------------- */
+  
+  
+h3 {
+  
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: Arial;
+  
+    margin-top: 30px;
+    text-align: center;
+}
+  
+  h3:not(.titulo) {
+  
+    color: steelblue;
+  
+  
+  
+}
+  
+h3:not(.titulo):hover {
+  
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+
+ 
+
+
+
+
+
+
+/* ---------------------MENU ENCABEZADO--------------------- */
+
+.encabezado {
+
+
+    width: 100%;
+    height: 120px;
+    background-color: #cc063e;
+    padding: 20px;
+    font-family: "Concert One", sans-serif;
+  
+}
+  
+  .encabezado a {
+  
+    text-decoration: none;
+    color: #e2d9c2; 
+  }
+  
+  
+  .Titulo {
+  
+    color: #e2d9c2;
+    text-align: center;
+  
+  
+  }
+  
+  
+  .Titulo::after, .Titulo::before {
+  
+    content: "  ";
+    display: inline-block;
+    width: 100px;
+    height: 2px;
+    padding: 2px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background: #fd9407;
+  }
+  
+  .menu-encabezado{
+    text-align: center;
+  }
+  
+  .menu-H {
+  
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+  
+    
+  }
+  
+  .menu-H li {
+  
+  
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+  
+    
+  }
+  
+  .menu-H li ul {
+  
+    display: none;
+    position: absolute; /* Para que el submenú aparezca debajo del elemento principal */
+    top: 100%; /* Para que aparezca justo debajo del elemento principal */
+    width: 200px;
+    text-align: center;
+    background-color: #64c6ffcf;
+    padding: 5px;
+    list-style: none;
+    z-index: 1000; /* Este de aqui me asegurara de que el sub menu aparesca sobre lo demas */
+    border-radius: 10px;
+  
+  }
+  
+  .menu-H li ul li {
+    padding: 10px 20px; /* Ajustar el padding para los elementos del submenú */
+  }
+  
+  
+  .menu-H li:hover ul {
+  
+    display: block;
+    
+  }
+  
+  .menu-encabezado a {
+  
+    display: block;
+  
+    text-decoration: none;
+    color:  #e2d9c2;
+    padding-top: 7px;
+  
+    transition: 0.2s;
+  }
+  
+  .menu-encabezado a:hover {
+  
+    font-weight: bold;
+    transform: scale(1.3);
+    color:  #fd9407;
+  }

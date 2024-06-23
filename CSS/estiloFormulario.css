@@ -4,8 +4,6 @@
   padding: 0;
   box-sizing: border-box;
 
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
   
   color: black;
 
@@ -16,16 +14,96 @@ body {
   background-color: #e2d9c2;
 }
 
-/* ---------------------MENU ENCABEZADO--------------------- */
+body {
+
+  background: #679B9B;
+}
+
+
+fieldset {
+
+  margin: 20px;
+  background: #ffeadb;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 50%;
+  border-radius: 15px;
+}
+
+main fieldset h1 {
+
+  margin: 20px;
+  color: #ff6933;
+}
+
+main fieldset p {
+
+  margin: 20px;
+  color: #0f1212;
+}
+
+main div h3 {
+
+
+  color: #151d1d;
+}
+
+div {
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div h3 {
+
+  background-color: #FF9A76;
+  border-radius: 15px;
+  width: 25%;
+  padding: 5px;
+}
+
+
+input{
+
+  margin: 20px;
+  background-color: #ffeadb;
+  border: #ffeadb;
+  border-radius: 5px;
+}
+
+a[href="Servicios.html"] {
+
+  color: black;
+}
+
+select{
+
+  margin: 10px;
+  background-color:  #637373;
+;
+  border-radius: 5px;
+}
+
+textarea {
+
+  border-radius: 5px;
+}
+
+/* ---------------------ENCABEZADO--------------------- */
 
 .encabezado {
 
+  font-family: "Concert One", sans-serif;
 
   width: 100%;
-  height: 175px;
+  height: 140px;
   background-color: #cc063e;
   padding: 20px;
 
+}
+
+.encabezado a {
+
+  text-decoration: none;
+  color: #e2d9c2; 
 }
 
 
@@ -33,6 +111,8 @@ body {
 .Titulo {
 
   color: #e2d9c2;
+  position: relative;
+
   text-align: center;
 
 
@@ -41,7 +121,7 @@ body {
 
 .Titulo::after, .Titulo::before {
 
-  content: "  ";
+  content: "";
   display: inline-block;
   width: 100px;
   height: 2px;
@@ -51,39 +131,67 @@ body {
   background: #fd9407;
 }
 
-.menu-encabezado{
+/* ---------------------MENU--------------------- */
 
-  margin: 0 auto;
-  max-width: 1250px;
-  max-height: 200px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+.menu-encabezado{
   text-align: center;
 }
 
-.menu-encabezado ul {
+.menu-H {
 
-  display: inline-block;
   list-style: none;
+  padding: 20px;
+  margin: 0;
 
   
+}
+
+.menu-H li {
 
 
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  
+}
+
+.menu-H li ul {
+
+  display: none;
+  position: absolute; /* Para que el submenú aparezca debajo del elemento principal */
+  top: 100%; /* Para que aparezca justo debajo del elemento principal */
+  width: 200px;
+  text-align: center;
+  background-color: #64c6ffcf;
+  padding: 5px;
+  list-style: none;
+  z-index: 1000; /* Este de aqui me asegurara de que el sub menu aparesca sobre lo demas */
+  border-radius: 10px;
+
+}
+
+.menu-H li ul li {
+  padding: 10px 20px; /* Ajustar el padding para los elementos del submenú */
+}
+
+
+.menu-H li:hover ul {
+
+  display: block;
+  
 }
 
 .menu-encabezado a {
 
-  box-sizing: content-box;
+  display: block;
 
-  display: inline-block;
   text-decoration: none;
   color:  #e2d9c2;
   padding-top: 7px;
 
-
-
-
-  transition: 1s;
+  transition: 0.2s;
 }
 
 .menu-encabezado a:hover {

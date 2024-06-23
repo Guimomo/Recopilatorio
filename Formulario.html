@@ -6,31 +6,225 @@
     
   <script src="https://kit.fontawesome.com/8000c4b174.js" crossorigin="anonymous"></script>
 
+
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Francois+One&family=LXGW+WenKai+Mono+TC&family=Playwrite+NG+Modern:wght@100..400&display=swap" rel="stylesheet">
 
+  <link rel="shortcut icon" href="img/web/icono.png">
 
 
   <link rel="stylesheet" href="CSS/estiloFormulario.css">  
 
 
-  <title>Formulario</title>
+  <title>Formulario n°1</title>
 </head>
 <body>
 
-    <header class="encabezado">
+  <header class="encabezado">
 
-    <h1 class="Titulo"> Guille </h1>
+    <h1 class="Titulo"> <a href="index.html">Guille</a> </h1>
 
     <nav class="menu-encabezado">
-      <ul>
+      <ul class="menu-H">
         <li><a href="Galeria.html">Galeria</a></li>
-        <li><a href="Formulario.html">Formulario</a></li>
-        <li><a href="Targetas.html">Targetas</a></li>
+
+        <li class="desp"><a href="#">Formulario</a>
+
+          <ul class="menu-V">
+            <li><a href="Formulario.html">Primer formulario</a></li>
+            <li><a href="Formulario2.html">Segundo formulario</a></li>
+          </ul>
+          
+        </li>
+
+        <li><a href="#">Cards</a>
+        <ul class="menu-V">
+          <li><a href="Targetas.html">Soy una card</a></li>
+          <li><a href="Targetas2.html">Spidy y Goku</a></li>
+        </ul>
+        
+      </li>
+        
       </ul>
     </nav>
-  </header>
+
+
+    <main>
+
+      <fieldset>
+        <legend>
+          <h1>Contacto</h1>
+        </legend>
+  
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Nobis autem, dignissimos quidem itaque porro
+          tenetur dicta sunt nesciunt pariatur ut laborum,<br> commodi, fuga possimus mollitia hic modi cupiditate!
+          Aperiam, placeat.
+        </p>
+  
+      </fieldset>
+  
+  
+      <form action="ruta.php" method="get" autocomplete="off">
+  
+        <div>
+  
+          <h3>Campo requerido</h3>
+  
+          <label for="NumeroIncidencia">Número incidencia:</label>
+          <input type="text" id="NumeroIncidencia" name="NumeroIncidencia" pattern="[0-9 Q]+" minlength="5" maxlength="5"
+            value="Q1167" placeholder="Ingrese número de incidencia" required>
+  
+          <label for="FechaHora">Fecha/hora recepción:</label>
+  
+          <input type="datetime-local" id="FechaHora" name="FechaHora" required>
+  
+        </div>
+  
+  
+        <div>
+  
+          <h3>Indormación del usuario</h3>
+  
+          <label for="nombre">Nombre del cliente:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" minlength="10"
+            maxlength="50" pattern="[A-Z a-z á-ú Á-Ú]+" required>
+  
+          <label for="identificacion">Identificación:</label>
+          <input type="text" id="identificacion" name="identificacion" placeholder="número de documento" minlength="5"
+            maxlength="10" pattern="[0-9]+" required>
+  
+          <br><br>
+  
+          <label for="TipoDocumento">Tipo de identificación:</label>
+          <select name="TipoDocumento" id="TipoDocumento" required>
+  
+            <option value="" selected>Elija el tipo</option>
+            <option value="1">C.C.</option>
+            <option value="2">T.I.</option>
+  
+          </select>
+  
+          <label for="solicitante">Tipo de Solicitante:</label>
+          <select name="solicitante" id="solicitante" required>
+  
+            <option value="" selected>Elija el tipo</option>
+            <option value="1">01-Alumno</option>
+            <option value="2">02-Directivo</option>
+            <option value="3">03-Docente</option>
+  
+          </select>
+  
+          <br><br>
+  
+          <label for="mail">E-mail:</label>
+          <input type="email" id="mail" name="mail" placeholder="ingrese su correo" pattern="[A-Za-z 0-9 _ . @]+"
+            required>
+  
+        </div>
+  
+  
+        <div>
+  
+          <h3>Indormación de contacto</h3>
+  
+          <label for="country">País:</label>
+          <select name="country" id="country" required>
+  
+            <option value="" selected>Elije un país</option>
+            <option value="1">Colombia</option>
+  
+          </select>
+  
+          <label for="departamento">Departamento:</label>
+          <select name="departamento" id="departamento" required>
+  
+            <option value="" selected>Elije el Departamento:</option>
+            <option value="1">Bogota D.C.</option>
+            <option value="2">Santander</option>
+            <option value="3">Valle del Cauca</option>
+  
+          </select>
+  
+          <br><br>
+  
+          <label for="ciudad">Ciudad:</label>
+          <select name="ciudad" id="ciudad" required>
+  
+            <option value="" selected>Elije el Ciudad:</option>
+            <option value="1">Bogota D.C.</option>
+            <option value="2">Bucaramanga</option>
+            <option value="3">Cali</option>
+  
+          </select>
+  
+          <br><br>
+  
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" name="telefono" id="telefono" minlength="10" maxlength="10"
+            placeholder="Digitar número telefonico" pattern="[0-9]+" required>
+  
+          <label for="celular">Celular:</label>
+          <input type="tel" name="celular" id="celular" minlength="10" maxlength="10"
+            placeholder="Digitar número de celular" pattern="[0-9]+" required>
+  
+          <br><br>
+  
+          <label for="fav">Medio de contacto preferido:</label>
+          <select name="fav" id="fav" required>
+  
+            <option value="" selected>Elije un medio de contacto:</option>
+            <option value="1">Llamada telefonica</option>
+            <option value="2">Mensaje de texto</option>
+            <option value="3">Correo escrito</option>
+  
+          </select>
+  
+          <label for="direccion">Dirección:</label>
+          <input type="text" id="direccion" name="direccion" placeholder="Ejemplo: Cl.1 #1-1, Barrio" minlength="10"
+            maxlength="80" pattern="[A-Z a-z á-ú Á-Ú # - , .]+" required>
+  
+  
+        </div>
+  
+  
+        <div>
+  
+          <h3>Indormación de solicitud</h3>
+  
+          <label for="fecha">Fecha de Vencimiento:</label>
+          <input type="date" name="fecha" id="fecha" min="2024-03-10" required> <br>
+  
+          <label for="asunto">Asunto:</label>
+          <input type="text" name="asunto" id="asunto" maxlength="40" placeholder="Ingrese su Asunto" required>
+  
+          <br><br>
+  
+          <label for="mensaje">Descripción:</label>
+          <textarea class="form-control" id="mensaje" rows="10" cols="40" required
+            placeholder="Ingrese petición, queja y/o reclamo"></textarea>
+  
+          <br><br>
+  
+          <label for="file">Adjunto:</label>
+          <input accept=".png, .jpg" type="file" id="file" name="file" multiple required>
+  
+  
+        </div>
+  
+  
+        <br><br>
+  
+  
+        <div>
+          <input type="submit"> <input type="reset">
+        </div>
+  
+  
+      </form>
+  
+    </main>
 
 
 

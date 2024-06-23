@@ -1,0 +1,238 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --color:rgb(0, 233, 233);
+    --color2:rgb(255, 106, 151);
+    --gradient: linear-gradient(to bottom, #fa709a 0%, #fee140 100%);
+    --gradient2: linear-gradient(to top, #fa709a 0%, #fee140 100%);
+    --colorB:white;
+    --boxshadow: 5px 20px 5px rgba(201,69, 68, 0.5);
+    --titulos: verdana;
+    --border-radius1: 30px;
+    --border-radius2:20px;
+  
+  
+    --gray: #969696;
+  
+    --black: black;
+  
+    --borderc: 5px solid orange; 
+}
+  
+body {
+  
+    font-family: Arial;
+    min-height: 100vh;
+    background-image: var(--gradient);
+    background-attachment: fixed;
+    
+}
+  
+.card{
+  
+    background: var(--colorB);
+  
+    width: 300px;
+    margin: 30px auto;
+  
+    padding: 30px 20px;
+  
+    border-radius: var(--border-radius1);
+  
+    box-shadow: var(--boxshadow);
+  
+}
+  
+.card_title{
+  
+    font-size: 30px;
+    color: var(--color);
+  
+}
+  
+.container--text{
+  
+  
+  
+}
+  
+.card_copy{
+  
+    color: var(--black, --color2 ) ;
+    font-size: 1.4rem;
+    margin: 20px 0;
+}
+  
+.button{
+  
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 20px;
+    background-image: var(--gradient);
+    border-radius: calc( var(--border-radius2) - 5px);
+  
+        color: var(--colorB);
+  
+    font-weight: bold;
+    margin-top: 20px auto;
+  
+    width: 100%;
+  
+    text-align: center;
+  
+    
+}
+  
+  
+  /* Componente Boton --------------------------------------*/
+  
+.button__icon{
+  
+    margin-right: 10px;
+}
+  
+.button--black{
+  
+    background: var(--black);
+    border-color: var(--borderc);
+}
+  
+.buttom--colorB {
+  
+    background: var(--colorB);
+}
+  
+  /* _____________________________________________________________ */
+  
+  
+  
+.card2 {
+  
+  
+  
+    background: var(--gray);
+    width: 300px;
+    margin: 30px auto;
+    padding: 30px 20px;
+    border-radius: var(--border-radius1);
+    box-shadow: var(--boxshadow);
+}
+
+
+
+
+
+/* ---------------------MENU ENCABEZADO--------------------- */
+
+.encabezado {
+
+
+    width: 100%;
+    height: 120px;
+    background-color: #cc063e;
+    padding: 20px;
+    font-family: "Concert One", sans-serif;
+  
+}
+  
+  .encabezado a {
+  
+    text-decoration: none;
+    color: #e2d9c2; 
+  }
+  
+  
+  .Titulo {
+  
+    color: #e2d9c2;
+    text-align: center;
+  
+  
+  }
+  
+  
+  .Titulo::after, .Titulo::before {
+  
+    content: "  ";
+    display: inline-block;
+    width: 100px;
+    height: 2px;
+    padding: 2px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background: #fd9407;
+  }
+  
+  .menu-encabezado{
+    text-align: center;
+  }
+  
+  .menu-H {
+  
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+  
+    
+  }
+  
+  .menu-H li {
+  
+  
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+  
+    
+  }
+  
+  .menu-H li ul {
+  
+    display: none;
+    position: absolute; /* Para que el submenú aparezca debajo del elemento principal */
+    top: 100%; /* Para que aparezca justo debajo del elemento principal */
+    width: 200px;
+    text-align: center;
+    background-color: #64c6ffcf;
+    padding: 5px;
+    list-style: none;
+    z-index: 1000; /* Este de aqui me asegurara de que el sub menu aparesca sobre lo demas */
+    border-radius: 10px;
+  
+  }
+  
+  .menu-H li ul li {
+    padding: 10px 20px; /* Ajustar el padding para los elementos del submenú */
+  }
+  
+  
+  .menu-H li:hover ul {
+  
+    display: block;
+    
+  }
+  
+  .menu-encabezado a {
+  
+    display: block;
+  
+    text-decoration: none;
+    color:  #e2d9c2;
+    padding-top: 7px;
+  
+    transition: 0.2s;
+  }
+  
+  .menu-encabezado a:hover {
+  
+    font-weight: bold;
+    transform: scale(1.3);
+    color:  #fd9407;
+  }

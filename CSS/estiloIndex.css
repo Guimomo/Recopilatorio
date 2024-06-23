@@ -4,25 +4,37 @@
   padding: 0;
   box-sizing: border-box;
 
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
   
-  color: black;
 
 }
+
+*::selection {
+
+  background-color: #fd9407;
+  color: #e2d9c2;
+
+}
+
 
 body {
 
   background-color: #e2d9c2;
 }
 
-/* ---------------------MENU ENCABEZADO--------------------- */
+
+
+
+
+
+
+/* ---------------------ENCABEZADO--------------------- */
 
 .encabezado {
 
+  font-family: "Concert One", sans-serif;
 
   width: 100%;
-  height: 175px;
+  height: 140px;
   background-color: #cc063e;
   padding: 20px;
 
@@ -33,6 +45,8 @@ body {
 .Titulo {
 
   color: #e2d9c2;
+  position: relative;
+
   text-align: center;
 
 
@@ -41,7 +55,7 @@ body {
 
 .Titulo::after, .Titulo::before {
 
-  content: "  ";
+  content: "";
   display: inline-block;
   width: 100px;
   height: 2px;
@@ -51,48 +65,59 @@ body {
   background: #fd9407;
 }
 
-.menu-encabezado{
+/* ---------------------MENU--------------------- */
 
-  margin: 0 auto;
-  max-width: 1250px;
-  max-height: 200px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+.menu-encabezado{
   text-align: center;
+}
+
+.menu-H {
+
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+
+  
 }
 
 .menu-H li {
 
+
+  position: relative;
   display: inline-block;
-  display: inline-block;
-  margin: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
   
 }
 
+.menu-H li ul {
 
-/* Hover para Li------- */
+  display: none;
+  position: absolute; /* Para que el submenú aparezca debajo del elemento principal */
+  top: 100%; /* Para que aparezca justo debajo del elemento principal */
+  width: 200px;
+  text-align: center;
+  background-color: #64c6ffcf;
+  padding: 5px;
+  list-style: none;
+  z-index: 1000; /* Este de aqui me asegurara de que el sub menu aparesca sobre lo demas */
+  border-radius: 10px;
+
+}
+
+.menu-H li ul li {
+  padding: 10px 20px; /* Ajustar el padding para los elementos del submenú */
+}
+
 
 .menu-H li:hover ul {
 
   display: block;
-
+  
 }
-
-.menu-H ul {
-
-  display: none;
-  position: absolute;
-  top: 100px;
-
-  background-color: #fd9407;
-
-}
-
-
 
 .menu-encabezado a {
-
-  box-sizing: content-box;
 
   display: block;
 
@@ -100,10 +125,7 @@ body {
   color:  #e2d9c2;
   padding-top: 7px;
 
-
-
-
-  transition: 1s;
+  transition: 0.2s;
 }
 
 .menu-encabezado a:hover {
@@ -116,6 +138,7 @@ body {
 
 
 
+/* ---------------------ARTICLE--------------------- */
 
 article{
   background-color: white;
@@ -124,15 +147,100 @@ article{
   background-position: -100px;
 
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 175px);
   overflow: hidden;
 }
 
 .monigote {
 
   display: inline-block;
-  max-width: 1000px;
+  max-width: 900px;
   position: relative;
-  left: 800px;
-  filter: blur(10px 10px% gray);
+  left: 50%;
+  filter: drop-shadow(10px 10px rgba(128, 128, 128, 0.4));
+}
+
+.estrella {
+
+  position: absolute;
+  top: 30%;
+  left: 48%;
+  display: inline-block;
+  height: 120px;
+  filter: drop-shadow(10px 10px 0px rgba(128, 128, 128, 0.31));
+}
+
+.dino {
+
+  position: absolute;
+  top: 63%;
+  left: 7%;
+  display: inline-block;
+  height: 200px;
+  filter: drop-shadow(10px 10px 0px rgba(128, 128, 128, 0.31));
+}
+
+.boceto {
+
+  position: absolute;
+  top: 20%;
+  left: -10%;
+  display: inline-block;
+  height: 500px;
+}
+
+
+/* ---------------------SECTION--------------------- */
+
+.presentación {
+
+  display: inline-block;
+  font-family: "Patrick Hand", cursive;
+
+  background-image: url("/img/web/note.png");
+  background-position: -30px 0px;
+  background-size: 550px;
+  background-repeat: no-repeat;
+  /* background-color: #cc063e; */
+
+  font-size: 36px;
+
+  padding: 30px;
+
+  height: 500px;
+  width: 500px;
+  padding: 30px;
+
+  position: absolute;
+  top: 25%;
+  left: 20%;
+}
+
+.presentación .titulo-sección::first-letter {
+
+  color: rgb(69, 156, 255);
+  font-size: 100px;
+}
+
+.boceto2 {
+
+  height: 105px;
+  position: absolute;
+  left: 390px;
+}
+
+/* ---------------------FOOTER--------------------- */
+
+.pie {
+
+  height: 35px;
+  width: 100%;
+  background: #cc063e;
+
+  color:  #e2d9c2;
+  font-family: "Concert One", sans-serif;
+
+  text-align: center;
+  padding-top: 8px;
+
 }

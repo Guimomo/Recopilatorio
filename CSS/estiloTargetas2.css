@@ -1,0 +1,217 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-----------------Spidy card--------------------*/
+
+main div.spidy {
+    height: 800px;
+    width: 600px;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: darkgray 10px 10px 30px;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+}
+  
+main div.spidy p, main div.spidy h1 {
+  
+  
+    box-sizing: content-box;
+    margin: 0 auto;
+    text-align: center;
+    width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+  
+  
+  
+  
+.spidy h1 {
+  
+    font-size: 50px;
+    color: darkred;
+    padding-top: 30px;
+}
+  
+.spidy p {
+  
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+  
+  
+  
+  
+.spidy img{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+  
+  
+  
+  
+.spidy button{
+  
+    display: block;
+    margin: 0 auto;
+    background-color: darkred;
+    border-radius: 10px;
+    border: none;
+    width: 300px;
+    height: 70px;
+    font-size: 25px;
+  
+}
+  
+.spidy button a {
+  
+    color: aliceblue;
+}
+  
+  
+  
+  
+  
+  /*---------------goku---------------*/
+  
+div.goku img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 70px;
+    width: 500px;
+    filter: drop-shadow(0px 0px 30px  gold);
+  
+}
+  
+  
+  
+  /*---------------spiderman png--------------*/
+  
+div.spiderman img {
+    margin-top: 70px;
+    width: 700px;
+    filter: drop-shadow(0px 0px 10px  blue);
+    display: block;
+    margin: 0 auto;
+  
+}
+
+
+
+
+/* ---------------------MENU ENCABEZADO--------------------- */
+
+.encabezado {
+
+
+    width: 100%;
+    height: 120px;
+    background-color: #cc063e;
+    padding: 20px;
+    font-family: "Concert One", sans-serif;
+  
+}
+  
+  .encabezado a {
+  
+    text-decoration: none;
+    color: #e2d9c2; 
+  }
+  
+  
+  .Titulo {
+  
+    color: #e2d9c2;
+    text-align: center;
+  
+  
+  }
+  
+  
+  .Titulo::after, .Titulo::before {
+  
+    content: "  ";
+    display: inline-block;
+    width: 100px;
+    height: 2px;
+    padding: 2px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background: #fd9407;
+  }
+  
+  .menu-encabezado{
+    text-align: center;
+  }
+  
+  .menu-H {
+  
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+  
+    
+  }
+  
+  .menu-H li {
+  
+  
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+  
+    
+  }
+  
+  .menu-H li ul {
+  
+    display: none;
+    position: absolute; /* Para que el submenú aparezca debajo del elemento principal */
+    top: 100%; /* Para que aparezca justo debajo del elemento principal */
+    width: 200px;
+    text-align: center;
+    background-color: #64c6ffcf;
+    padding: 5px;
+    list-style: none;
+    z-index: 1000; /* Este de aqui me asegurara de que el sub menu aparesca sobre lo demas */
+    border-radius: 10px;
+  
+  }
+  
+  .menu-H li ul li {
+    padding: 10px 20px; /* Ajustar el padding para los elementos del submenú */
+  }
+  
+  
+  .menu-H li:hover ul {
+  
+    display: block;
+    
+  }
+  
+  .menu-encabezado a {
+  
+    display: block;
+  
+    text-decoration: none;
+    color:  #e2d9c2;
+    padding-top: 7px;
+  
+    transition: 0.2s;
+  }
+  
+  .menu-encabezado a:hover {
+  
+    font-weight: bold;
+    transform: scale(1.3);
+    color:  #fd9407;
+  }
