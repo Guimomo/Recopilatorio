@@ -5,137 +5,151 @@
     box-sizing: border-box;
 }
 
-:root{
+body{
 
-    --color:rgb(0, 233, 233);
-    --color2:rgb(255, 106, 151);
-    --gradient: linear-gradient(to bottom, #fa709a 0%, #fee140 100%);
-    --colorB:white;
-    --boxshadow: 5px 20px 5px rgba(201,69, 68, 0.5);
-    --titulos: verdana;
-    --border-radius1: 30px;
-    --border-radius2:20px;
-  
-  
-    --gray: #969696;
-  
-    --black: black;
-  
-    --borderc: 5px solid orange; 
+    background: salmon;
 }
   
-body {
-  
-    font-family: Arial;
-    min-height: 100vh;
-    background-image: var(--gradient);
-    background-attachment: fixed;
-    
-}
-  
-.card{
-  
-    background: var(--colorB);
+.card {
+
+    font-family: Arial, Helvetica, sans-serif;
   
     width: 300px;
-    margin: 30px auto;
+    margin: 0 auto;
+    background: white;
+    
   
-    padding: 30px 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
   
-    border-radius: var(--border-radius1);
   
-    box-shadow: var(--boxshadow);
-  
+    box-shadow: -20px -20px 0px 0px #fb968b;
+    border-radius: 10px;
 }
   
-.card_title{
-  
-    font-size: 30px;
-    color: var(--color);
-  
-}
-  
-.container--text{
-  
-  
-  
-}
-  
-.card_copy{
-  
-    color: var(--black, --color2 ) ;
-    font-size: 1.4rem;
-    margin: 20px 0;
-}
-  
-.button{
-  
-    display: inline-block;
-    text-decoration: none;
-    padding: 12px 20px;
-    background-image: var(--gradient);
-    border-radius: calc( var(--border-radius2) - 5px);
-  
-        color: var(--colorB);
-  
-    font-weight: bold;
-    margin-top: 20px auto;
-  
-    width: 100%;
+.card_title {
   
     text-align: center;
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
   
-    
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+  
+.card_title::after, .card_title::before {
+  
+    content: '  ';
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    padding: 2px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background: salmon;
+}
+  
+.card_title::after {
+  
+    width: 15%;
+    left: 0;
+    top: 0;
+}
+  
+.card_title::before {
+  
+    width: 15%;
+    left: 0;
+    top: 0;
 }
   
   
-  /* Componente Boton --------------------------------------*/
+/* Color de seleccion--------------------------- */
   
-.button__icon{
+*::selection {
   
-    margin-right: 10px;
+  
+    background-color: salmon;
+    color: white;
 }
   
-.button--black{
   
-    background: var(--black);
-    border-color: var(--borderc);
+  
+  
+/* Color de letra/linea especifica--------------------- */
+  
+p::first-letter {
+  
+    color:  salmon;
+  
+    text-transform: uppercase;
+  
+    font-size: 2rem;
+  
+    font-weight: 900;
+  
 }
   
-.button--colorB {
+p::first-line {
   
-   background: var(--colorB);
-   color: var(--black);
+    color: steelblue;
+    font-size: 2rem;
+    font-weight: bold;
+}
+  
+p{
+  
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 0.1px;
+}
+  
+  
+  
+  
+/* Contador---------------------------------------- */
+  
+.card ul {
+  
+    /* margin-top: 10px; */
+    counter-reset: contador;
+}
+  
+.card ul li{
+  
+    list-style: none;
+    padding: 0 auto;
+    margin-bottom: 10px;
+}
+  
+  
+  
+.card ul li::before {
+  
+    content: counter(contador);
+    counter-increment: contador;
+  
+    display: inline-block;
+  
+    background-color: salmon;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+  
+    border-radius: 50%;
+  
+    color: white;
+    margin-right: 20px;
+  
+  
+}
+  
+/* ::after pone estilos luego de un elemento y ::before los pone antes. */
 
-}
-  
-  /* _____________________________________________________________ */
-  
-  
-  
-.card2 {
-  
-  
-  
-    background: var(--gray);
-    width: 300px;
-    margin: 30px auto;
-    padding: 30px 20px;
-    border-radius: var(--border-radius1);
-    box-shadow: var(--boxshadow);
-}
 
-.card3 {
-  
-  
-  
-  background: var(--gray);
-  width: 300px;
-  margin: 30px auto;
-  padding: 30px 20px;
-  border-radius: var(--border-radius1);
-  box-shadow: var(--boxshadow);
-}
+
 
 
 
